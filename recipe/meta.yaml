@@ -13,7 +13,6 @@ source:
   sha256: ef2aa71e793a92a1518b00c62a3e6e86fdd1a94157201204a84910d7b5faa723
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
   number: 0
   noarch: generic
@@ -22,8 +21,6 @@ build:
     - lib/
 
 requirements:
-  build:
-
   host:
     - r-base
     - r-dt >=0.4
@@ -102,6 +99,7 @@ about:
     summarizing, transforming, and combining data. It also contains functionality to
     generate reproducible reports of the analyses conducted in the application.
   license_family: AGPL
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
