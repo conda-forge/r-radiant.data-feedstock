@@ -1,4 +1,4 @@
-{% set version = '1.3.4' %}
+{% set version = "1.3.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/radiant.data_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/radiant.data/radiant.data_{{ version }}.tar.gz
-  sha256: fa5fea879a49d8a8e345852e306efe205aaa1be4f713fce5a12edb98c89252a7
+  sha256: c0e2b74d559ead4f833966d83b79d22e49c42907272235cd83266a18e661eba5
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -98,15 +98,12 @@ test:
     - "\"%R%\" -e \"library('radiant.data')\""  # [win]
 
 about:
-  home: https://github.com/radiant-rstats/radiant.data, https://radiant-rstats.github.io/radiant.data,
-    https://radiant-rstats.github.io/docs
+  home: https://github.com/radiant-rstats/radiant.data, https://radiant-rstats.github.io/radiant.data, https://radiant-rstats.github.io/docs
   license: AGPL-3
-  summary: The Radiant Data menu includes interfaces for loading, saving, viewing, visualizing,
-    summarizing, transforming, and combining data. It also contains functionality to
-    generate reproducible reports of the analyses conducted in the application.
+  summary: The Radiant Data menu includes interfaces for loading, saving, viewing, visualizing, summarizing, transforming, and combining data. It also contains functionality to generate reproducible reports of the analyses conducted in the application.
   license_family: AGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3
     - LICENSE
 
 extra:
