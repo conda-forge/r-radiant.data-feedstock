@@ -5,7 +5,7 @@ Home: https://github.com/radiant-rstats/radiant.data, https://radiant-rstats.git
 
 Package license: AGPL-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: The Radiant Data menu includes interfaces for loading, saving, viewing, visualizing, summarizing, transforming, and combining data. It also contains functionality to generate reproducible reports of the analyses conducted in the application.
 
