@@ -3,7 +3,7 @@ About r-radiant.data
 
 Home: https://github.com/radiant-rstats/radiant.data, https://radiant-rstats.github.io/radiant.data, https://radiant-rstats.github.io/docs
 
-Package license: AGPL-3
+Package license: AGPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-radiant.data-feedstock/blob/master/LICENSE.txt)
 
