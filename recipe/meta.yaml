@@ -30,6 +30,7 @@ requirements:
     - r-mass
     - r-base64enc
     - r-broom >=0.5.2
+    - r-bslib >=0.3.1
     - r-car >=3.0_0
     - r-curl >=2.5
     - r-dplyr >=1.0.7
@@ -43,6 +44,7 @@ requirements:
     - r-markdown >=1.0
     - r-patchwork >=1.0.0
     - r-plotly >=4.7.1
+    - r-png
     - r-psych >=1.8.4
     - r-randomizr >=0.20.0
     - r-readr >=1.1.1
@@ -64,6 +66,7 @@ requirements:
     - r-mass
     - r-base64enc
     - r-broom >=0.5.2
+    - r-bslib >=0.3.1
     - r-car >=3.0_0
     - r-curl >=2.5
     - r-dplyr >=1.0.7
@@ -77,6 +80,7 @@ requirements:
     - r-markdown >=1.0
     - r-patchwork >=1.0.0
     - r-plotly >=4.7.1
+    - r-png
     - r-psych >=1.8.4
     - r-randomizr >=0.20.0
     - r-readr >=1.1.1
