@@ -1,4 +1,4 @@
-{% set version = "1.4.3" %}
+{% set version = "1.4.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/radiant.data_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/radiant.data/radiant.data_{{ version }}.tar.gz
-  sha256: 47e4184593710d74f4002ea225990a11ff51e0e73dfc736379b05f759fe06c4f
+  sha256: 97444131f1d0a74255a72d9abec46c84246a7eb9c9763973d27e9ef7d3ff48d2
 
 build:
   merge_build_host: true  # [win]
