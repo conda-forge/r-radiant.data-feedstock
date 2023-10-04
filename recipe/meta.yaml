@@ -1,4 +1,4 @@
-{% set version = "1.5.6" %}
+{% set version = "1.6.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/radiant.data_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/radiant.data/radiant.data_{{ version }}.tar.gz
-  sha256: 255383a634b6249c0a77b6a6474f133170753299589ad7edc2f3b2c7f342a1b5
+  sha256: e2b43d28a88c8346cea7b01a5d4f290e8bfb7d7c3f7239b0f4a6c17effc07201
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -26,22 +26,23 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-dt >=0.9
+    - r-dt >=0.28
     - r-mass
+    - r-arrow >=12.0.1
     - r-base64enc
     - r-broom >=0.5.2
-    - r-bslib >=0.3.1
+    - r-bslib >=0.5.0
     - r-car >=3.0_0
     - r-curl >=2.5
-    - r-dplyr >=1.0.7
-    - r-ggplot2 >=2.2.1
+    - r-dplyr >=1.1.2
+    - r-ggplot2 >=3.4.2
     - r-glue >=1.3.0
     - r-import >=1.1.0
     - r-jsonlite >=1.0
     - r-knitr >=1.20
     - r-lubridate >=1.7.4
     - r-magrittr >=1.5
-    - r-markdown >=1.0
+    - r-markdown >=1.7
     - r-patchwork >=1.0.0
     - r-plotly >=4.7.1
     - r-png
@@ -50,10 +51,10 @@ requirements:
     - r-readr >=1.1.1
     - r-readxl >=1.0.0
     - r-rlang >=0.4.10
-    - r-rmarkdown >=1.14
+    - r-rmarkdown >=2.22
     - r-rstudioapi >=0.7
     - r-scales >=0.4.0
-    - r-shiny >=1.7.1
+    - r-shiny >=1.7.4
     - r-shinyace >=0.4.1
     - r-shinyfiles >=0.9.1
     - r-stringi >=1.2.4
@@ -62,22 +63,23 @@ requirements:
     - r-writexl >=0.2
   run:
     - r-base
-    - r-dt >=0.9
+    - r-dt >=0.28
     - r-mass
+    - r-arrow >=12.0.1
     - r-base64enc
     - r-broom >=0.5.2
-    - r-bslib >=0.3.1
+    - r-bslib >=0.5.0
     - r-car >=3.0_0
     - r-curl >=2.5
-    - r-dplyr >=1.0.7
-    - r-ggplot2 >=2.2.1
+    - r-dplyr >=1.1.2
+    - r-ggplot2 >=3.4.2
     - r-glue >=1.3.0
     - r-import >=1.1.0
     - r-jsonlite >=1.0
     - r-knitr >=1.20
     - r-lubridate >=1.7.4
     - r-magrittr >=1.5
-    - r-markdown >=1.0
+    - r-markdown >=1.7
     - r-patchwork >=1.0.0
     - r-plotly >=4.7.1
     - r-png
@@ -86,10 +88,10 @@ requirements:
     - r-readr >=1.1.1
     - r-readxl >=1.0.0
     - r-rlang >=0.4.10
-    - r-rmarkdown >=1.14
+    - r-rmarkdown >=2.22
     - r-rstudioapi >=0.7
     - r-scales >=0.4.0
-    - r-shiny >=1.7.1
+    - r-shiny >=1.7.4
     - r-shinyace >=0.4.1
     - r-shinyfiles >=0.9.1
     - r-stringi >=1.2.4
