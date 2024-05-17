@@ -3,11 +3,15 @@ About r-radiant.data-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-radiant.data-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/radiant-rstats/radiant.data, https://radiant-rstats.github.io/radiant.data, https://radiant-rstats.github.io/docs
+Home: https://radiant-rstats.github.io/radiant.data
 
 Package license: AGPL-3.0-only
 
 Summary: The Radiant Data menu includes interfaces for loading, saving, viewing, visualizing, summarizing, transforming, and combining data. It also contains functionality to generate reproducible reports of the analyses conducted in the application.
+
+Development: https://github.com/radiant-rstats/radiant.data
+
+Documentation: https://radiant-rstats.github.io/docs
 
 Current build status
 ====================
