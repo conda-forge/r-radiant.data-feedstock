@@ -1,4 +1,4 @@
-{% set version = "1.6.7" %}
+{% set version = "1.6.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/radiant.data_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/radiant.data/radiant.data_{{ version }}.tar.gz
-  sha256: 9525e844c4c0abe804d4e68031d9982012c6d0cb1f664e35fdad64caeeb5a55c
+  sha256: de38937aad30889e8e5e434b061a2f472da8b708c422ab8388a8f76e267b3c0c
 
 build:
   number: 0
